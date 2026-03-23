@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────
+# AI Code Generator — Python Dependencies
+# Install all with:  pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────
+
+# Core ML / HuggingFace stack
+transformers>=4.38.0          # HuggingFace model + tokenizer
+accelerate>=0.27.0            # Efficient model loading (CPU / GPU)
+torch>=2.1.0                  # PyTorch backend (CPU wheel is fine for demo)
+sentencepiece>=0.1.99         # Tokenizer dependency for some code models
+huggingface_hub>=0.21.0       # Downloading models from the Hub
+
+# Streamlit UI
+streamlit>=1.32.0             # Web interface
+streamlit-ace>=0.1.1          # Syntax-highlighted code editor widget
+
+# Code formatting & highlighting
+pygments>=2.17.0              # Code syntax highlighting in terminal/text
+
+# Utilities
+python-dotenv>=1.0.0          # Load environment variables from .env
+black>=24.0.0                 # Auto-format generated Python snippets
+requests>=2.31.0              # HTTP requests (HuggingFace Inference API)
+
+# Optional — FastAPI backend (uncomment if needed)
+# fastapi>=0.110.0
+# uvicorn[standard]>=0.27.0
+# pydantic>=2.6.0
